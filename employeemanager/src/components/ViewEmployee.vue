@@ -8,7 +8,14 @@
       </ul>
       <router-link class="btn grey" to="/">Back</router-link>
       <button @click="deleteEmployee" class="btn red">Delete</button>
+  <div class="fixed-action-btn">
+    <router-link v-bind:to="{name: 'edit-employee', params: {employee_id: employee_id}}" class="btn-floating waves-effect waves-light hoverable btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </router-link></div>
+  
   </div>
+       
+  
 </template>
 
 <<script>
